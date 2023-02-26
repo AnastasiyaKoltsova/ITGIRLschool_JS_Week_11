@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+}
+
+h1, 
+.total {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.item {
+border: 1px solid black;
+margin-left: 10vw;
+margin-right: 10vw;
+padding: 3vw 3vh;
+display: grid;
+grid-template-columns: 20vw 1fr 20vw;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    border-bottom: none;
+}
+
+img {
+    width: 15vw;
+}
+
+.describe p {
+    color: gray;
+}
+
+.item-4 {
+    margin-bottom: 5vh;
+}
+
+.blockOfPrice {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    color: blue;
+}
+
+.blockOfPrice p {
+text-align: end;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    color: azure;
+    background-color: black;
+    font-size: 20px;
+    padding: 15px 15px;
+    margin-bottom: 10vh;
+}
+
+.sumBox {
+    display: flex;
+    gap: 5%;
+}
