@@ -3,6 +3,12 @@
 ## Теоретические вопросы
 
 ### 1. Сколько детей (дочерних DOM-узлов) у элемента <ul> в примере ниже
+```
+<ul>
+    <li>Привет</li>
+    <li>Мир</li>
+</ul>
+```
 2 детей
 
 ### 2. Есть такой элемент: <input id= "input" value = "Привет">. Какой вызов поменяет значение в нём?
@@ -11,6 +17,15 @@ input.setValue("Пока");
 ```
 
 ### 3. Сколько потомков будет у <div> после кода ниже?
+```
+<div id="div"></div>
+<p id="p">Привет</p>
+
+<script>
+  div.append(p);
+  div.append(p);
+</script>
+```
 Один
 
 ### 4. В каких случаях для элемента elem не верно elem.firstChild == elem.lastChild?
@@ -44,6 +59,42 @@ BOM (Browser Object Model) — это набор глобальных объек
 DOM (Document Object Model) - это объектная модель документа, которую браузер создает в памяти компьютера на основании HTML-кода, полученного им от сервера. Иными словами, это представление HTML-документа в виде дерева тегов.
 
 ### 11. Есть вот такая страница:
+```
+<!DOCTYPE HTML>
+<html>
+
+<body>
+	<form name="search">
+		<label>Поиск:
+			<input type="text" name="search"> </label>
+		<input type="submit" value="Search!"> </form>
+	<hr>
+	<form name="search-person">Поиск по посетителям:
+		<table id="age-table">
+			<tr>
+				<td>Возраст:</td>
+				<td id="age-list">
+					<label>
+						<input type="radio" name="age" value="young">до 18</label>
+					<label>
+						<input type="radio" name="age" value="mature">18-50</label>
+					<label>
+						<input type="radio" name="age" value="senior">старше 50</label>
+				</td>
+			</tr>
+			<tr>
+				<td>Дополнительно:</td>
+				<td>
+					<input type="text" name="info">
+					<input type="text" name="info">
+					<input type="text" name="info"> </td>
+			</tr>
+		</table>
+		<input type="button" value="Search!"> </form>
+</body>
+
+</html>
+```
 #### Как найти в ней:
 #### 1. Таблицу с `id="age-table"`
 ```
